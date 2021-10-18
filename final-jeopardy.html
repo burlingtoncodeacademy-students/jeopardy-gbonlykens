@@ -5,8 +5,41 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Final Jeopardy</title>
+  <style>
+    @import url("styles/final-jeopardy.css");
+  </style>
 </head>
 <body>
-  <h1>Final Jeopardy</h1>
+  <!--Final Page Container-->
+  <div id="final-page-container">
+
+    <h1>FINAL JEOPARDY!</h1> <br>
+    <!-- Last Clue ... animate to 'flip around' when clicked  -->
+    <div id="final-clue">Click to view your final clue.</div>
+    <div class="card-final-clue">A stretch of salt water seperated from the sea<br>
+    by a sandbar, coral reef, or barrier reef is what?</div>
+
+    <!--Final Clue Image-->
+    <img id="final-clue-img"
+    src="../images/lagoon.png"
+    alt="An image of a lagoon"/>
+
+  </div>
+
+  <!--Player controls for guessing and entering bid amount-->
+  <form>
+    <input id="input1" type="text"
+    placeholder="Enter your answer..."/>
+
+    <input id="input2" type="number"
+    placeholder="Amount you want to bet..."/>
+    
+    <!--Javascript will re-allow the 'click' of the button once a condition is met, i.e. they enter guess and big amount-->
+    <button disabled>SUBMIT FINAL ANSWER</button>
+
+  </form>
+
+  </div>
+  
 </body>
 </html>

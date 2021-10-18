@@ -1,0 +1,43 @@
+#page2-container {
+    display: grid;
+    width: 60%;
+    height: auto;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    padding: 5px;
+}
+/* @media screen and(min-width:451px) and (max-width:800px) {} */
+
+.h1-title {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: auto;
+
+}
+
+#gameboard {
+    display: grid;
+    width: 90%;
+    height: 32em;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6,1fr);
+    grid-column-start: 1;
+    grid-row-end: 7;
+    /* justify-content: center;
+    align-items: center;
+    gap: 5.5px;
+    background-color: white;
+    padding-bottom: 20px;
+    border: black 4px;
+    border-radius: 2em; */
+}
+
+#category-holder {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(1fr);
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+

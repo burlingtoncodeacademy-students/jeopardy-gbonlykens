@@ -5,8 +5,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeopardy</title>
+  <style>
+    @import url("styles/round-2.css");
+  </style>
 </head>
 <body>
-  <h1>Double Jeopardy</h1>
+  <!-- Page 3 Container -->
+  <div id="page3-container">
+    <h1>DOUBLE JEOPARDY!</h1>
+    <h6><i>Player 1,&nbsp;</i> it's your turn!</h6>
+
+    <!-- Gameboard -->
+    <div id="Gameboard">
+      <div class="card category7">Ice Hockey</div>
+      <div class="card category8">The World</div>
+      <div class="card category9">Safari</div>
+      <div class="card category10">Greek Mythology</div>
+      <div class="card category11">Storms</div>
+      <div class="card category12">Movies</div> <br>
+      <!-- specify cards by category to style them the same way according to category-->
+      <div class="hockey-card">Clue 200</div>
+      <div class="hockey-card">Clue 400</div>
+      <div class="hockey-card">Clue 600</div>
+      <div class="hockey-card">Clue 800</div>
+      <div class="hockey-card">Clue 1000</div>
+      <div class="world-card">Clue 200</div>
+      <div class="world-card">Clue 400</div>
+      <div class="world-card">Clue 600</div>
+      <div class="world-card">Clue 800</div>
+      <div class="world-card">Clue 1000</div>
+      <div class="safari-card">Clue 200</div>
+      <div class="safari-card">Clue 400</div>
+      <div class="safari-card">Clue 600</div>
+      <div class="safari-card">Clue 800</div>
+      <div class="safari-card">Clue 1000</div>
+      <div class="greek-card">Clue 200</div>
+      <div class="greek-card">Clue 400</div>
+      <div class="greek-card">Clue 600</div>
+      <div class="greek-card">Clue 800</div>
+      <div class="greek-card">Clue 1000</div>
+      <div class="storm-card">Clue 200</div>
+      <div class="storm-card">Clue 400</div>
+      <div class="storm-card">Clue 600</div>
+      <div class="storm-card">Clue 800</div>
+      <div class="storm-card">Clue 1000</div>
+      <div class="movie-card">Clue 200</div>
+      <div class="movie-card">Clue 400</div>
+      <div class="movie-card">Clue 600</div>
+      <div class="movie-card">Clue 800</div>
+      <div class="movie-card">Clue 1000</div> <br>
+
+    </div>
+
+    <!-- Space to text and buttons for user controls-->
+    <form>
+      <input type="text" placeholder="What is ______?" />
+      <button id="guess-button">GUESS</button>
+      <button id="pass-button">PASS</button>
+    </form>
+
+    <!--View Player Scores-->
+    <div id="playerscores">
+      <h5>Player 1 Current Score: 0</h5>
+      <h5>Player 2 Current Score: 0</h5>
+    </div>
+</div>
+
+    <!--Link to Final Jeopardy Page-->
+    <a id="to-final-jeopardy-page"
+    href="/final-jeopardy.html">Final Jeopardy</a>
+
 </body>
 </html>

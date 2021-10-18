@@ -5,8 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Jeopardy First Round</title>
+  <style>
+    @import url("styles/round-1.css");
+  </style>
 </head>
-<body>
-  <h1>Round One</h1>
+<body> <!--Container Page for Round One-->
+  <div id="page2-container"></div>
+    <h1 class="h1-title">Jeopardy Round One</h1>
+    <h6><i>Player One,&nbsp;</i>you're up!</h6>
+    
+    <!--Jeopardy Gameboard Containaer-->
+    <div id="gameboard">
+      <div id="category-holder">
+      <div class="card category1">7-Letter<br>Words</div>
+      <div class="card category2">Holidays</div>
+      <div class="card category3">Bodies of<br>Water</div>
+      <div class="card category4">Vegetables</div>
+      <div class="card category5">Medical Diseases</div>
+      <div class="card category6">U.S. Cities</div> <br>
+      </div>
+
+      <div class="100card">Clue 100</div>
+      <div class="100card">Clue 100</div>
+      <div class="100card">Clue 100</div>
+      <div class="100card">Clue 100</div>
+      <div class="100card">Clue 100</div>
+      <div class="200card">Clue 200</div>
+      <div class="200card">Clue 200</div>
+      <div class="200card">Clue 200</div>
+      <div class="200card">Clue 200</div>
+      <div class="200card">Clue 200</div>
+      <div class="300card">Clue 300</div>
+      <div class="300card">Clue 300</div>
+      <div class="300card">Clue 300</div>
+      <div class="300card">Clue 300</div>
+      <div class="300card">Clue 300</div>
+      <div class="400card">Clue 400</div>
+      <div class="400card">Clue 400</div>
+      <div class="400card">Clue 400</div>
+      <div class="400card">Clue 400</div>
+      <div class="400card">Clue 400</div>
+      <div class="500card">Clue 500</div>
+      <div class="500card">Clue 500</div>
+      <div class="500card">Clue 500</div>
+      <div class="500card">Clue 500</div>
+      <div class="500card">Clue 500</div> <br>
+    </div>
+    <!-- Player Input for Answering Questions -->
+    <form>
+      <input type="text" 
+      placeholder="What is _______?" />
+      <button id="guess-button">GUESS</button>
+      <button id="pass-button">PASS</button>
+    </form>
+    <!-- View Player Scores -->
+    <div id="player-scores">
+      <h5>Player 1 Current Score: 0</h5>
+      <h5>Player 2 Current Score: 0</h5>
+    </div>
+    <!-- Link to Double Jeopardy Page -->
+    <a id="to-double-jeopardy-page"
+    href="/round-2.html">To Double Jeopardy</a>
+  </div>
 </body>
 </html>
