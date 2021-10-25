@@ -41,3 +41,10 @@
     grid-column-end: 7;
 }
 
+#100card {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
