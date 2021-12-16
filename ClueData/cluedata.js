@@ -1,10 +1,11 @@
 //js file where all game data will live and be referenced from
+
 const Data = {
     features: {
         categories: 1,
         clues: 1,
     },
-
+// specifies the category number
     categories: {
         "7-Letter Words": 1,
         "Holidays": 2,
@@ -20,7 +21,8 @@ const Data = {
         "Movies": 12,
         "Final Question": 13
     },
-
+    
+// clue data
     clues: [
         {
             question: "If a duck made a sound, you would say that it what?",
