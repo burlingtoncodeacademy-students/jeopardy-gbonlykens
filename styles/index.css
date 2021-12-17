@@ -1,11 +1,8 @@
 body {
     margin: 0 ;
     padding: 80px;
-    background: rgb(2,4,29);
-    background: radial-gradient(circle, rgba(2,4,29,1) 13%, rgba(97,236,228,1) 15%, rgba(85,81,189,1) 48%, rgba(206,217,70,1) 73%, rgba(13,13,14,1) 98%);
+    background: #FF5733;
 }
-
-
 
 #landing-page-container {
     display: flex;
@@ -51,6 +48,7 @@ h1 {
     justify-content: center;
 }
 
+/* ------ Landing Page Button ----- */
 #button {
     padding: 5px;
     width: 1.5in;
