@@ -8,6 +8,7 @@
   <style>
     @import url("styles/final-jeopardy.css");
   </style>
+  
 </head>
 <body>
 
@@ -15,8 +16,6 @@
   <div id="final-page-container">
 
     <h1>FINAL JEOPARDY!</h1> <br>
-    <!-- Last Clue ... animate to 'flip around' when clicked  -->
-    <div id="final-clue">Click to view your final clue.</div>
 
      <!--Final Clue Image-->
      <img id="final-clue-img"
@@ -24,34 +23,41 @@
      alt="Final Clue Image"/>
    </div>
 
-    <div class="card-final-clue">
-      <p> A stretch of salt water seperated from the sea<br>
+   <!-- Last Clue -->
+    <div class="finalQuestion">
+      <p id= "finalQuestion"> A stretch of salt water seperated from the sea<br>
     by a sandbar, coral reef, or barrier reef is what? <p/>
   </div>
 
-   
+  <!--Player's controls for guessing and entering bid amount-->
+ <div id="final-bet-container">
+  <form class="final-input" action="">
+    <h2 id="playerOne" class="playerScore">Player One: Score</h2>
+    <input id="playerOneWager" type="text" placeholder="Your wager..." />
+    <input id="playerOneAnswer" type="text" placeholder="What is?..." />
+    <button id="playerOneWagerSubmit" class="final-bet-button">
+      Wager
+    </button>
+    <button id="playerOneAnswerSubmit" class="final-bet-button">
+      Answer
+    </button>
+  </form>
 
-  <!--Player controls for guessing and entering bid amount-->
-  <div id= "final-bet">
-    <label><b>$</b></label>
-  
-    <input id="input1"
-    name="finalbet"
-    type="text"
-    placeholder="Enter your answer..."/>
+  <form class="final-input" action="">
+    <h2 id="playerTwo" class="playerScore">Player Two: Score</h2>
+    <input id="playerTwoWager" type="text" placeholder="Your wager..." />
+    <input id="playerTwoAnswer" type="text" placeholder="What is?..." />
+    <button id="playerTwoWagerSubmit" class="final-bet-button">
+      Wager
+    </button>
+    <button id="playerTwoAnswerSubmit" class="final-bet-button">
+      Answer
+    </button>
+  </form>
+ </div>
 
-    <input id="input2"
-    name="final-answer"
-    type="number"
-    placeholder="Place your bet..."/>
-    
-    
-    <!--Javascript will re-allow the 'click' of the button once a condition is met, i.e. they enter guess and big amount-->
-    <button disabled>SUBMIT FINAL ANSWER</button>
-
-  
-  </div>
   </div>
   
 </body>
+<script src="./scripts/final-jeopardy.js"></script>
 </html>

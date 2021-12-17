@@ -8,166 +8,113 @@
   <style>
     @import url("styles/round-1.css");
   </style>
+  <script src="./scripts/clutdata.js"></script>
 </head>
-<body> <!--Container Page for Round One-->
-  <div id="page2-container"></div>
-    <h1 class="h1-title">Jeopardy Round One</h1>
-    <h6><i>Player One,&nbsp;</i>you're up!</h6>
+<body> 
+      <h1 class="h1-title">Jeopardy Round One</h1>
+
+  <!--Container Page for Round One-->
+  <div id="page-container" class="round-div">
+    
     
     <!--Jeopardy Gameboard Containaer-->
     <div id="gameboard">
 
-      <div class="category-card">
-          <h2 class="category-name">7-Letter Words</h2>
-          <!--Category Cards-->
-          <a href="#">
-            <h4 class="clue-card" id="1">$100</h4>
-          </a>
-          <a href="#">
-            <h4 class="clue-card" id="2">$200</h4>
-          </a>
-          <a href="#">
-            <h4 class="clue-card" id="3">$300</h4>
-          </a>
-          <a href="#">
-            <h4 class="clue-card" id="4">4100</h4>
-          </a>
-          <a href="#">
-            <h4 class="clue-card" id="5">$500</h4>
-          </a>
-      </div>
+      <!--Category Divs-->
+      <div class="category-card"><p>7-Letter Words</p></div>
+      <div class="category-card"><p>Holidays</p></div>
+      <div class="category-card"><p>Bodies of Water</p></div>
+      <div class="category-card"><p>Vegetables</p></div>
+      <div class="category-card"><p>Medical Diseases</p></div>
+      <div class="category-card"><p>U.S. Cities</p></div>
 
-      <div class="category-card">
-        <h2 class="category-name">Holidays</h2>
-        <!--Category Cards-->
-        <a href="#">
-          <h4 class="clue-card" id="6">$100</h4>
-        </a>
-        <a href="#">
-          <h4 class="clue-card" id="7">$200</h4>
-        </a>
-        <a href="#">
-          <h4 class="clue-card" id="8">$300</h4>
-        </a>
-        <a href="#">
-          <h4 class="clue-card" id="9">4100</h4>
-        </a>
-        <a href="#">
-          <h4 class="clue-card" id="10">$500</h4>
-        </a>
-    </div>
+          
+          <!--Clue Cards-->
+          <div id= "1" class="clue-card"><p>$100</p></div>
+          <div id= "2" class="clue-card"><p>$200</p></div>
+          <div id= "3" class="clue-card"><p>$300</p></div>
+          <div id= "4" class="clue-card"><p>$400</p></div>
+          <div id= "5" class="clue-card"><p>$500</p></div>
 
-    <div class="category-card">
-      <h2 class="category-name">Bodies of Water</h2>
-      <!--Category Cards-->
-      <a href="#">
-        <h4 class="clue-card" id="11">$100</h4>
-      </a>
-      <a href="#">
-        <h4 class="clue-card" id="12">$200</h4>
-      </a>
-      <a href="#">
-        <h4 class="clue-card" id="13">$300</h4>
-      </a>
-      <a href="#">
-        <h4 class="clue-card" id="14">4100</h4>
-      </a>
-      <a href="#">
-        <h4 class="clue-card" id="15">$500</h4>
-      </a>
-  </div>
+          <div id= "6" class="clue-card"><p>$100</p></div>
+          <div id= "7" class="clue-card"><p>$200</p></div>
+          <div id= "8" class="clue-card"><p>$300</p></div>
+          <div id= "9" class="clue-card"><p>$400</p></div>
+          <div id= "10" class="clue-card"><p>$500</p></div>
 
-  <div class="category-card">
-    <h2 class="category-name">Vegetables</h2>
-    <!--Category Cards-->
-    <a href="#">
-      <h4 class="clue-card" id="16">$100</h4>
-    </a>
-    <a href="#">
-      <h4 class="clue-card" id="17">$200</h4>
-    </a>
-    <a href="#">
-      <h4 class="clue-card" id="18">$300</h4>
-    </a>
-    <a href="#">
-      <h4 class="clue-card" id="19">4100</h4>
-    </a>
-    <a href="#">
-      <h4 class="clue-card" id="20">$500</h4>
-    </a>
-</div>
+          <div id= "11" class="clue-card"><p>$100</p></div>
+          <div id= "12" class="clue-card"><p>$200</p></div>
+          <div id= "13" class="clue-card"><p>$300</p></div>
+          <div id= "14" class="clue-card"><p>$400</p></div>
+          <div id= "15" class="clue-card"><p>$500</p></div>
 
-<div class="category-card">
-  <h2 class="category-name">Medical Diseases</h2>
-  <!--Category Cards-->
-  <a href="#">
-    <h4 class="clue-card" id="21">$100</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="22">$200</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="23">$300</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="24">4100</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="25">$500</h4>
-  </a>
-</div>
+          <div id= "16" class="clue-card"><p>$100</p></div>
+          <div id= "17" class="clue-card"><p>$200</p></div>
+          <div id= "18" class="clue-card"><p>$300</p></div>
+          <div id= "19" class="clue-card"><p>$400</p></div>
+          <div id= "20" class="clue-card"><p>$500</p></div>
 
-<div class="category-card">
-  <h2 class="category-name">U.S. Cities</h2>
-  <!--Category Cards-->
-  <a href="#">
-    <h4 class="clue-card" id="26">$100</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="27">$200</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="28">$300</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="29">4100</h4>
-  </a>
-  <a href="#">
-    <h4 class="clue-card" id="30">$500</h4>
-  </a>
-</div>
-    </div>
-     <!-- Wrapper for form and buttons -->
-     <div class="form-container">
-    <!-- Player Input for Answering Questions -->
-    <div class="form">
-    <form action="">
-      <input
-      type="text" 
-      name=""
-      id=""
-      placeholder="What is ...?"
-      class="input-round"
-      />
-    </form>
-  </div> 
+          <div id= "21" class="clue-card"><p>$100</p></div>
+          <div id= "22" class="clue-card"><p>$200</p></div>
+          <div id= "23" class="clue-card"><p>$300</p></div>
+          <div id= "24" class="clue-card"><p>$400</p></div>
+          <div id= "25" class="clue-card"><p>$500</p></div>
+
+          <div id= "26" class="clue-card"><p>$100</p></div>
+          <div id= "27" class="clue-card"><p>$200</p></div>
+          <div id= "28" class="clue-card"><p>$300</p></div>
+          <div id= "29" class="clue-card"><p>$400</p></div>
+          <div id= "30" class="clue-card"><p>$500</p></div>
+        </div>
+
+        <div class="question-box">
+           <!-- Player Scores -->
+          <h4
+          id="playerOne"
+          class="playerScore">
+          Player One: Score
+        </h4>
+        <h4
+          id="playerTwo"
+          class="playerScore">
+          Player Two: Score
+        </h4>
+          <input
+          id="answerInput"
+          type="text"
+          placeholder="What is...?" />
+          
+        </div>
+
+          
+      
      <!-- Guess & Pass Buttons -->
-      <div class="buttons">
-      <button id="guess-button">GUESS</button>
-      <button id="pass-button">PASS</button>
+      <div class="guessPass">
+      <button
+      id="roundOneGuess"
+      class="playerButtons">
+      GUESS
+    </button>
+
+      <button
+      id="roundOnePass"
+      class="playerButtons">
+      PASS
+    </button>
     </div>
     </div>
-
-
-    <!-- View Player Scores -->
-    <div class="player-scores">
-      <h5>Player 1 Current Score: 0</h5>
-      <h5>Player 2 Current Score: 0</h5>
+    
+    <div class="continue">
+      <div id="player-turn" class="nextRound"></div>
+      <div id="timer"></div>
+      <div id="guess-timer"></div>
     </div>
 
     <!-- Link to Double Jeopardy Page -->
-    <a id="to-double-jeopardy-page"
-    href="/round-2.html">To Double Jeopardy</a>
+   <button id="round-two"
+   class="nextRound">
+  To Round Two Jeopardy!</button>
   </div>
+  <script src="./scripts/round-1.js"></script>
 </body>
 </html>

@@ -4,76 +4,117 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <title>Jeopardy First Round</title>
   <style>
-    @import url("styles/round-2.css");
+    @import url("styles/jeopardy.css");
   </style>
+  <script src="./scripts/clutdata.js"></script>
 </head>
-<body>
-  <!-- Page 3 Container -->
-  <div id="page3-container">
-    <h1>DOUBLE JEOPARDY!</h1>
-    <h6><i>Player 1,&nbsp;</i> it's your turn!</h6>
+<body> 
+      <h1 class="h1-title">Double Jeopardy</h1>
 
-    <!-- Gameboard -->
-    <div id="Gameboard">
-      <div class="card category7">Ice Hockey</div>
-      <div class="card category8">The World</div>
-      <div class="card category9">Safari</div>
-      <div class="card category10">Greek Mythology</div>
-      <div class="card category11">Storms</div>
-      <div class="card category12">Movies</div> <br>
-      <!-- specify cards by category to style them the same way according to category-->
-      <div class="hockey-card">Clue 200</div>
-      <div class="hockey-card">Clue 400</div>
-      <div class="hockey-card">Clue 600</div>
-      <div class="hockey-card">Clue 800</div>
-      <div class="hockey-card">Clue 1000</div>
-      <div class="world-card">Clue 200</div>
-      <div class="world-card">Clue 400</div>
-      <div class="world-card">Clue 600</div>
-      <div class="world-card">Clue 800</div>
-      <div class="world-card">Clue 1000</div>
-      <div class="safari-card">Clue 200</div>
-      <div class="safari-card">Clue 400</div>
-      <div class="safari-card">Clue 600</div>
-      <div class="safari-card">Clue 800</div>
-      <div class="safari-card">Clue 1000</div>
-      <div class="greek-card">Clue 200</div>
-      <div class="greek-card">Clue 400</div>
-      <div class="greek-card">Clue 600</div>
-      <div class="greek-card">Clue 800</div>
-      <div class="greek-card">Clue 1000</div>
-      <div class="storm-card">Clue 200</div>
-      <div class="storm-card">Clue 400</div>
-      <div class="storm-card">Clue 600</div>
-      <div class="storm-card">Clue 800</div>
-      <div class="storm-card">Clue 1000</div>
-      <div class="movie-card">Clue 200</div>
-      <div class="movie-card">Clue 400</div>
-      <div class="movie-card">Clue 600</div>
-      <div class="movie-card">Clue 800</div>
-      <div class="movie-card">Clue 1000</div> <br>
+  <!--Container Page for Round One-->
+  <div id="page-container" class="round-div">
+    
+    
+    <!--Jeopardy Gameboard Containaer-->
+    <div id="gameboard">
 
+      <!--Category Divs-->
+      <div class="category-card"><p>Ice Hockey</p></div>
+      <div class="category-card"><p>The World</p></div>
+      <div class="category-card"><p>Safari</p></div>
+      <div class="category-card"><p>Greek Mythology</p></div>
+      <div class="category-card"><p>Storms</p></div>
+      <div class="category-card"><p>Movies</p></div>
+
+          
+          <!--Clue Cards-->
+          <div id= "31" class="clue-card"><p>$200</p></div>
+          <div id= "32" class="clue-card"><p>$400</p></div>
+          <div id= "33" class="clue-card"><p>$600</p></div>
+          <div id= "34" class="clue-card"><p>$800</p></div>
+          <div id= "35" class="clue-card"><p>$1000</p></div>
+
+          <div id= "36" class="clue-card"><p>$200</p></div>
+          <div id= "37" class="clue-card"><p>$400</p></div>
+          <div id= "38" class="clue-card"><p>$600</p></div>
+          <div id= "39" class="clue-card"><p>$800</p></div>
+          <div id= "30" class="clue-card"><p>$1000</p></div>
+
+          <div id= "41" class="clue-card"><p>$200</p></div>
+          <div id= "42" class="clue-card"><p>$400</p></div>
+          <div id= "43" class="clue-card"><p>$600</p></div>
+          <div id= "44" class="clue-card"><p>$800</p></div>
+          <div id= "45" class="clue-card"><p>$1000</p></div>
+
+          <div id= "46" class="clue-card"><p>$200</p></div>
+          <div id= "47" class="clue-card"><p>$400</p></div>
+          <div id= "48" class="clue-card"><p>$600</p></div>
+          <div id= "49" class="clue-card"><p>$800</p></div>
+          <div id= "40" class="clue-card"><p>$1000</p></div>
+
+          <div id= "51" class="clue-card"><p>$200</p></div>
+          <div id= "52" class="clue-card"><p>$400</p></div>
+          <div id= "53" class="clue-card"><p>$600</p></div>
+          <div id= "54" class="clue-card"><p>$800</p></div>
+          <div id= "55" class="clue-card"><p>$1000</p></div>
+
+          <div id= "56" class="clue-card"><p>$200</p></div>
+          <div id= "57" class="clue-card"><p>$400</p></div>
+          <div id= "58" class="clue-card"><p>$600</p></div>
+          <div id= "59" class="clue-card"><p>$800</p></div>
+          <div id= "60" class="clue-card"><p>$1000</p></div>
+        </div>
+
+        <div class="question-box">
+            <!-- Player Scores -->
+          <h4
+          id="playerOne"
+          class="playerScore">
+          Player One: Score
+        </h4>
+          <input
+          id="answerInput"
+          type="text"
+          placeholder="What is...?" />
+          <h4
+          id="playerTwo"
+          class="playerScore">
+          Player Two: Score
+        </h4>
+        </div>
+
+          
+      
+     <!-- Guess & Pass Buttons -->
+      <div class="guessPass">
+      <button
+      id="roundOneGuess"
+      class="playerButtons">
+      GUESS
+    </button>
+
+      <button
+      id="roundOnePass"
+      class="playerButtons">
+      PASS
+    </button>
+    </div>
     </div>
 
-    <!-- Space to text and buttons for user controls-->
-    <form>
-      <input type="text" placeholder="What is ______?" />
-      <button id="guess-button">GUESS</button>
-      <button id="pass-button">PASS</button>
-    </form>
-
-    <!--View Player Scores-->
-    <div id="playerscores">
-      <h5>Player 1 Current Score: 0</h5>
-      <h5>Player 2 Current Score: 0</h5>
+    
+    <div class="continue">
+      <div id="player-turn" class="nextRound"></div>
+      <div id="timer"></div>
+      <div id="guess-timer"></div>
     </div>
-</div>
 
-    <!--Link to Final Jeopardy Page-->
-    <a id="to-final-jeopardy-page"
-    href="/final-jeopardy.html">Final Jeopardy</a>
-
+    <!-- Link to Double Jeopardy Page -->
+   <button id="final-jeopardy"
+   class="nextRound">
+  To Final Jeopardy!</button>
+  </div>
+  <script src="./scripts/round-2.js"></script>
 </body>
 </html>
