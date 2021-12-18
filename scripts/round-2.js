@@ -364,7 +364,7 @@ function guessTimer(count) {
       document.location = "final-jeopardy.html";
     }
   // transfer of player scores to round two
-    roundTwoStart.addEventListener("click", (evt) => {
+    finalJeopardy.addEventListener("click", (evt) => {
       sessionStorage.setItem("playerOneScore", playerOneScore);
       sessionStorage.setItem("playerTwoScore", playerTwoScore);
       document.location = "final-jeopardy.html";
