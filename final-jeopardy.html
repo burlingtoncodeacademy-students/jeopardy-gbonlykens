@@ -5,8 +5,59 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Final Jeopardy</title>
+  <style>
+    @import url("styles/final-jeopardy.css");
+  </style>
+  
 </head>
 <body>
-  <h1>Final Jeopardy</h1>
+
+  <!--Final Page Container-->
+  <div id="final-page-container">
+
+    <h1>FINAL JEOPARDY!</h1> <br>
+
+     <!--Final Clue Image-->
+     <img id="final-clue-img"
+     src="../images/lagoon.png"
+     alt="Final Clue Image"/>
+   </div>
+
+   <!-- Last Clue -->
+    <div class="finalQuestion">
+      <p id= "finalQuestion"> A stretch of salt water seperated from the sea<br>
+    by a sandbar, coral reef, or barrier reef is what? <p/>
+  </div>
+
+  <!--Player's controls for guessing and entering bid amount-->
+ <div id="final-bet-container">
+  <form class="final-input" action="">
+    <h2 id="playerOne" class="playerScore">Player One: Score</h2>
+    <input id="playerOneWager" type="text" placeholder="Your wager..." />
+    <input id="playerOneAnswer" type="text" placeholder="What is?..." />
+    <button id="playerOneWagerSubmit" class="final-bet-button">
+      Wager
+    </button>
+    <button id="playerOneAnswerSubmit" class="final-bet-button">
+      Answer
+    </button>
+  </form>
+
+  <form class="final-input" action="">
+    <h2 id="playerTwo" class="playerScore">Player Two: Score</h2>
+    <input id="playerTwoWager" type="text" placeholder="Your wager..." />
+    <input id="playerTwoAnswer" type="text" placeholder="What is?..." />
+    <button id="playerTwoWagerSubmit" class="final-bet-button">
+      Wager
+    </button>
+    <button id="playerTwoAnswerSubmit" class="final-bet-button">
+      Answer
+    </button>
+  </form>
+ </div>
+
+  </div>
+  
 </body>
+<script src="./scripts/final-jeopardy.js"></script>
 </html>

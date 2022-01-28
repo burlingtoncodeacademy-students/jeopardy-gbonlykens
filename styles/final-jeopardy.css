@@ -1,0 +1,30 @@
+#final-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1 {
+    font-size: 80px;
+    align-items: center;
+}
+
+
+#final-clue-img {
+    width: 400px;
+    align-items: center;
+    margin: 70px;
+}
+
+#input1 {
+    align-items: center;
+}
+
+#input2 {
+    align-items: center;
+}
+
+.button {
+align-items: center;
+}

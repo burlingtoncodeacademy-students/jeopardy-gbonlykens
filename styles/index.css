@@ -1,0 +1,64 @@
+body {
+    margin: 0 ;
+    padding: 80px;
+    background: #FF5733;
+}
+
+#landing-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+h1 {
+    color: rgb(224, 241, 222);
+    font-family: 'Philosopher', sans-serif;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+#h1-wrap {
+    text-align: center;
+    width: 55vw;
+    margin: auto;
+    background-color:teal;
+    padding: 3vh 5vw 2vh 5vw;
+    margin-top: 3%;
+    box-shadow: .5vw 1vh;
+    transition: all 2s ease;
+    transition-property: width, background-color;
+}
+
+#h1-wrap:hover {
+    width: 55vw;
+    background-color: rgb(60, 88, 216);
+    transition-property: width, background-color;
+}
+
+#image1 {
+    display: flex;
+    width: 500px;
+    border-radius: 8px;
+    margin-top: 8%;
+    margin-left: 20%;
+    margin-right: 20%;
+    
+    justify-content: center;
+}
+
+/* ------ Landing Page Button ----- */
+#button {
+    padding: 5px;
+    width: 1.5in;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+#button:hover {
+    background-color: #53ff66;
+    justify-content: center;
+}
+

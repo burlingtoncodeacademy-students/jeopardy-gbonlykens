@@ -1,0 +1,47 @@
+#page-container {
+    display: grid;
+    width: 60%;
+    height: auto;
+    grid-template-columns: repeat(6,1fr);
+    align-items: center;
+    padding: 5px;
+}
+/* @media screen and(min-width:451px) and (max-width:800px) {} */
+
+.h1-title {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    height: auto;
+    text-align: center;
+}
+
+#gameboard {
+    display: grid;
+    background-color:#F08080;
+    width: 80vw;
+    min-height: 62vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+   
+}
+.clue-card {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border: 3px solid black;
+}
+
+#category-holder {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-start: 1;
+    grid-column-end: 7;
+}
+
+
+
